@@ -23,6 +23,7 @@ public class MultidimensionalArrays {
                 if(eachElement%2==0){
                     System.out.println(eachElement);
                 }
+
             }
         }
 
