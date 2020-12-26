@@ -17,6 +17,10 @@ arrayMaxNum(a2);
 
 arrayMinNum(a1);
 arrayMinNum(a2);
+int[]a3={1,1,2,3,3,4,5,5,5,5,6,6,6,7};
+arrayUniqueElements(a3);
+int[]a4={10,10,8,11,11,11,9};
+arrayUniqueElements(a4);
 
 
 }
@@ -63,10 +67,23 @@ for(int each:arr){
 
 
     }
+    public static void arrayUniqueElements(int[] arr) {
+        for (int each : arr) {
+            int count = 0;
+            for (int each2 : arr) {
+                if (each == each2) {
+                    count++;
+                }
+            }
+            if (count == 1) {
+                System.out.print(each + " ");
+            }
 
+        }
 
+        System.out.println();
 
-
+    }
 }
 /*
 task:
